@@ -116,11 +116,10 @@ let weather = {
       : (time = "night");
 
     // Determining which image to change the background to based on time of day or weather conditions
+    console.log(data.weather[0].description.split(" ").join(""));
     time === "night"
       ? (body.style.backgroundImage = `url(https://source.unsplash.com/1600x900/?night-sky`)
-      : (body.style.backgroundImage = `url(https://source.unsplash.com/1600x900/?${data.weather[0].description
-          .split(" ")
-          .join("")})`);
+      : (body.style.backgroundImage = `url(https://source.unsplash.com/1600x900/?${data.weather[0].main}-${time})`);
 
     // Changing city name in the card
     cityHeader.innerHTML = `Weather in ${
