@@ -1,0 +1,98 @@
+:root {
+  --dark: #374151;
+  --darker: #1f2937;
+  --darkest: #111827;
+  --grey: #c0c8d6;
+  --cyan: #99e9f2;
+  --indigo: #4c6ef5;
+  --light: #eee;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Fira sans", sans-serif;
+}
+
+body {
+  background-color: var(--darker);
+  /* background-image: url("https://source.unsplash.com/1600x900/?clouds"); */
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+}
+
+div {
+  margin-bottom: 1rem;
+}
+
+.container {
+  max-width: 500px;
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 30vh;
+  padding: 25px 50px 3px 50px;
+  text-align: center;
+
+  background-color: var(--grey);
+  opacity: 90%;
+  border-radius: 25px;
+}
+
+.search,
+.weather {
+  margin: 0 auto;
+}
+
+.temp {
+  margin-bottom: 0.5rem;
+}
+
+.feels-like {
+  margin-bottom: 0;
+}
+
+.icon {
+  height: 12rem;
+  margin: 1.5rem 0 1.5rem 0;
+}
+
+.search-bar {
+  width: 80%;
+  height: 1.5rem;
+}
+
+.pac-item {
+  font-size: 1rem;
+  padding: 10px 10px;
+}
+
+.pac-icon {
+  display: none;
+}
+
+.pac-item-query {
+  font-size: 1rem;
+  padding-right: 14px;
+}
+
+.time {
+  margin-top: 25px;
+  font-size: 0.8rem;
+}
+
+@media (max-width: 850px) {
+  .container {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 25px;
+    /* padding: 50px 50px 3px 50px; */
+    text-align: center;
+
+    /* background-color: var(--grey); */
+    border-radius: 25px;
+  }
+}
