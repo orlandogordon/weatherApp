@@ -97,12 +97,12 @@ div {
   }
 
   .pac-item {
-    font-size: 0.5rem;
-    padding: 5px 5px;
+    font-size: 0.7rem;
+    padding: 1px;
   }
 
   .pac-item-query {
-    font-size: 0.5rem;
+    font-size: 0.7rem;
     padding-right: 7px;
   }
 }
